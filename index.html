@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body{
+                background-image:url(Adek1.jpg);
+                background-size: 550px;
+            }
+            button{
+                border: 2px;
+                border-radius: 5px;
+                background-color: #dc3545;
+                justify-content: center;
+                display: flex;
+                position: absolute top-50 start-50;
+                margin: 10px 10px;
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                color: white;
+            }
+        </style>
+        <title>Untuk Adek Abng.Com</title>
+    </head>
+    <body>
+        <script>
+            alert('PERINGATAN!!');
+            alert('Ini Abng  buat untuk Adek yang sangatt abng sayang!!!');
+            alert('Abng harap adek suka yah dengan yang abng buat ini..... ');
+            alert('Sebelumya,Ketika Peringatan ini telah selesai.. Semisalnya lagu yang udh abng siapkan ini gak kedengaran.. abng cuman mau bilang kalau tekan tombol "PLAY" terlebih dahulu supaya adek nantinya bisa mendengarkan lagu yang telah abng siapkan ini dan pastinya.. abng harap adek makin suka setelah melihat apa yang abng buat ini untuk adek...');
+            alert('Kalau semisalnya lagunya sudah kedengaran maka adek langsung saja klik tombol "klik disini yah"');
+            alert('Sedikit Peringatan.. dann enjoyy!!!');
+        </script>
+        <div class='position-absolute bottom-50 start-50 translate-middle'>
+        <button id="mute">PLAY</button></div>
+        <script>
+            var musik=new Audio();
+            musik.src="I Like You So Much, Youll Know It (我多喜欢你你会知道)- A Love So Beautiful OST -Wang Junqi [English Cove.mp3";
+            musik.loop=true;
+            musik.play();
+            function mulaiAudio(){
+                var play=document.getElementById("play");
+                var play=document.getElementById("mute");
+
+                play.addEventListener('click',fplay);
+                mute.addEventListener('click',fmute);
+
+                function fplay(){
+                    if(musik.paused){
+                        musik.play();
+                    }else{
+                        musik.pause();
+                    }
+                }
+            }
+            window.addEventListener('load',mulaiAudio);
+        </script>
+        <div class='position-absolute top-50 start-50 translate-middle'>
+            <button id='button' class='btn btn-danger btn-lg' onclick='mulai()'> Klik Disini! </button>
+            <div id='iloveyou' style='display: none;'>
+                <h2 class='text-center'>Aku sayang kamu<br>&#10084;&#65039;</h2>
+            </div>
+        </div>
+        <span id='hati' class='fixed-bottom text-center my-3' onclick='hati()'></span>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript">
+            const author = 'Bagas';
+            const swals = Swal.mixin({
+                cancelButtonColor: '#d33',
+                confirmButtonColor: '#d63384',
+            });
+            async function mulai(){
+                await swals.fire('Hai baby <3');
+                await swals.fire('Abg sengaja buat ini untuk kmu..');
+                await swals.fire('Karna abng mau mintak maaf atas kesalahan yang telah abng perbuat...');
+                await swals.fire('Yang dimana mengakibatkan adek cemburu.. :( :(');
+                await swals.fire('Abang mintak maap yang adekk.. abng gak bermaksud untuk membuat adek cemburu.. malahan abng ingin mencegah itu terjadi...');
+                await swals.fire('Sekali lagi abang mintak maaf yah adek.. abng mintak kesempatan lagi.. untuk tidak melakukan kesalahan itu lagi.. :( :(')
+                await swals.fire('Abng berjanji ke adek.. pada tanggal 8 agustus ini sampai seterusnya abng berjanji bahwasannya tidak akan melakukan kesalahan itu lagi yah..... dan abng pastinya akan mengingat janji tersebut..');
+                await swals.fire('Adek jangan marah lagi yah... sumpah dekk kalau adek cemburu gini abng takutt adek ninggalin abng... abng gak mau sampai itu terjadi ke abng... :( :( :(');
+                await swals.fire('Kalau sampai adek pergi dari hidup abng.. abng gak tau lagi harus apa dek.. mungkin hidup abng baklan berubah sepenuhnya....');
+                await swals.fire(':( :( :( :( :(');
+                await swals.fire('Maapin abng yah adekk.. abng janji gak bakalan ngulangingnya lagii... :( :( ');
+                await swals.fire('yah yah yah... maapin adekkk abnggg..  :( :(');
+                await swals.fire('hemmmmm mudh2an adek maapin abng yah.. :( Adekkk oo adekk isi yah yang abng suruh ini soalnya abng mau tau kejujuran adekk ke abng gimana... :( :( :(');
+                
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu..',
+                    input: 'text',
+                    showCancelButton: true,
+                });
+                if(nama){
+                    var { isConfirmed: sayang } = await swals.fire({
+                        title: `${nama} sayang ga sama ${author}?`,
+                        confirmButtonText: 'Sayang!',
+                        cancelButtonText: 'Enggak!',
+                        showCancelButton: true,
+                    });
+                    if(sayang){
+                        await swals.fire('Abng juga sayang banget sama adekk... Sayang banget pokonya.. sampai2 Abng gak mau kehilangan adekk.. tapi abng membuat kesalahan yang mengakibatkan adek cemburu.. Sampai2 aabng bingung harus apa :( :(');
+                        var { value: persen } = await swals.fire({
+                            title: 'Seberapa sayang emangnya Adek ke Abng ?? :)',
+                            icon: 'question',
+                            input: 'range',
+                            inputLabel: 'Antara 1-100 ya',
+                            inputAttributes: {
+                                min: 1,
+                                max: 100,
+                            },
+                            inputValue: 50
+                        });
+                        if(persen){
+                            await swals.fire(`Makasih ya Adek udah sayang sama ${author} ${persen}%`);
+                            var { isConfirmed: maafin } = await swals.fire({
+                                title: 'Sekarang Adek mau gak maafin abng ??',
+                                confirmButtonText: 'Mau!',
+                                cancelButtonText: 'Gak!',
+                                showCancelButton: true,
+                            });
+                            if(maafin){
+                                await swals.fire('Makacih yah Adek kmu udh mau maafin Abng mu ini :)');
+                                await swals.fire('Sekali lagi abng mintak maaf sebesar besarnya ke adek yah.... abng janji pokoknya enggak akan membuat Adek cemburu lagi pokoknya :(');
+                                await swals.fire('Yaudh adek abng cuman mau memberikan ini ke adek.. ini mungkin sedikit bukti dari abng kalau abng nih seriuss dan gak boong mintak maap ke adek.. :) :) :)');
+                                await swals.fire('Abng takut bangett kalau adek beneran pergi dari abng.. abng gak mau itu terjadi.. pokoknya abng ama dekk gak bolehh pergiii titik!!  :( :(');
+                                await swals.fire('Bay bay babyy...');
+                                await swals.fire('RAWRR <3');
+                            } else {
+                                await swals.fire('Kenapa adek gak mau maafin abng...?? :(');
+                                await swals.fire('pleaseee maafin abng dek... abng janji gak baklan lakuin itu lagii beneran dahh sumpahhh abng gak mauu adekk pergi dari abng gara2 kelakuan abng...:( :(');
+                                await swals.fire('Maafin abng yah dek yah.. pleaseeeee...');
+                                await swals.fire('Abng sangat berharap adekk memberikan abng kesempatan lagi untuk tidak berbuat seperti itu lagi....');
+                                await swals.fire('Sekali lagi abng mintak maaf yah... dan abng cuman bisa memberikan hal kecil ini ke adek sebagai permintaan maaf abng.. dan abng membuktikan kalau abng mintak maaf ini tuluss dan beneran..... :( :(');
+                                await swals.fire('Maafin abng yah adekk...:( :(');
+                                await swals.fire('Sayanggg banget adekk pokoknya titik!!!');
+                                await swals.fire('RAWRR <3');
+                            }
+                        }
+                    } else {
+                        await swals.fire('Adek beneran gak sayang ama abng nih??');
+                        await swals.fire('kemaren adek bilang di wa adek sayang ama abng masa skrng egggak.. :( :(');
+                        await swals.fire('mungkin karena abng udh buat adek cemburu yah... maaf yah adekkk jangan gtu nah.. :( :(');
+                        await swals.fire('Abng takut banget adek ngejauh dari abng loh... gak bisa abng kalau adek kayak gini.. bawaannya takutt...:( :(');
+                        await swals.fire('Maafin abng yahh.. abng janji untuk terkhir kalinya gak ngelakuin itu lagi...');
+                        await swals.fire('ehmmmm Yaudh kalau emang udah gak sayang lagi ama abng.... ');
+                        await swals.fire('Abng akan melakukan bagaimanapun caranya biar adek sayang lagi ke abng....');
+                        await swals.fire('Bay bay adek abngg...');
+                        await swals.fire('RAWRR <3');
+                    }
+                } else {
+                    await swals.fire('Harus diisi nama.. jangan sampe gak diisi..!!!');
+                    await swals.fire('Ayukk diulangi lagi Adekk..');
+                }
+            }
+        </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    </body>
+</html>
